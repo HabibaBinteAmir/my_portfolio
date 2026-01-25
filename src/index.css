@@ -40,3 +40,10 @@
  font-family: "PT Serif", serif;
  }
 }
+@layer components {
+  .glass {
+    background: color-mix(in srgb,var( --color-surface) 50%, transparent );
+    backdrop-filter: blur(16px);
+    background: color-mix(in srgb, var( --color-border) 50%, transparent );
+  }
+}
