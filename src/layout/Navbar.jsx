@@ -7,7 +7,6 @@ import { useState } from "react"
     {href :"#experience", label :"Experience"},
     {href :"#project", label :"Project"},
     {href :"#textmonial", label :"Testmonial"},
-  
  ]
 export const Navbar = () => {
     const [isMobileMenuOpen,setIsMobileMenuOpen]=useState(false)
@@ -40,7 +39,7 @@ export const Navbar = () => {
     </nav>
      {/* Mobile nav bar */}
        {isMobileMenuOpen &&(
-         <div className="md:hidden glass_strong px-5 py-5  min-h-screen justify-center items-center">
+         <div className="animate-fade-in transition-all md:hidden glass_strong px-5 py-5  min-h-screen justify-center items-center">
             <div className=" flex flex-col gap-y-10 items-center">
                {navlink.map((link,index)=>
                <a href={link.href} key={index} className="text-lg font-semibold " >{link.label}</a>
