@@ -11,14 +11,14 @@ import { useState } from "react"
 export const Navbar = () => {
     const [isMobileMenuOpen,setIsMobileMenuOpen]=useState(false)
   return (
-   <header className="  fixed z-50 i bg-transparent py-5 top-0 left-0 right-0 ">
+   <header className=" animate-fade-in fixed z-50 i bg-transparent py-5 top-0 left-0 right-0 ">
     <nav className="container mx-auto   px-5 flex justify-between items-center  ">
         <a href="#"
-        className="text-xl font-bold  hover:text-primary duration-300 "
+        className="text-xl font-bold  hover:text-primary duration-300  animate-pulse"
         >H.</a>
         {/* desktop vertion */}
         <div>
-            <div className="hidden md:flex gap-5 px-3 glass rounded-full" >
+            <div className=" hidden md:flex gap-5 px-3 glass rounded-full" >
                 {navlink.map((link,index)=> (
                 <a href={link.href} key={index} className="text-muted-foreground text-sm px-3 py-3 hover:text-primary rounded-full duration-300 ">{link.label} </a>
                 ))}
