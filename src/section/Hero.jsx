@@ -1,11 +1,13 @@
 import React from 'react'
 import { Button } from '../components/Button'
 import { ArrowBigLeft, ArrowRight, Download } from 'lucide-react'
+import { AnimatedBorderButton } from '../components/AnimatedButton'
 
 export const Hero = () => {
   return (
-    // background img
+    
     <section className='min-h-screen relative  flex items-center  overflow-hidden'>
+      {/* // background img */}
       <div className=' inset-0 absolute'>
         <img src="/hero-bg.jpg" alt="banner img" className='w-full h-full  object-cover opacity-40' />
         <div className=' absolute inset-0  bg-linear-to-b from-background/20 via-background/80 to-background'/>
@@ -29,12 +31,12 @@ export const Hero = () => {
         ))}
       </div>
 {/* context section */}
-      <div className=" container mx-auto px-6 pt-28 pb-30 relative z-10 ">
+      <div className=" container mx-auto px-6 pt-20 md:pt-28 pb-30 relative z-10 ">
         <div className='grid lg:grid-cols-2 gap-12 items-center'>
           {/* left side  */}
           <div >
             <div className="animate-fade-in">
-              <span className='inline-flex items-center gap-2 px-2 py-2 rounded-full glass text-sm text-primary '>
+              <span className='inline-flex items-center gap-2 px-2 py-2  mb-2 rounded-full glass text-sm text-primary '>
                 <span className=' w-2 h-2 bg-primary  rounded-full animate-pulse '/>
                 Frontend Developer . React Specialist 
                 </span>
@@ -50,14 +52,14 @@ export const Hero = () => {
                <p className='text-lg text-muted-foreground text max-w-lg animate-fade-in py-5  animation-delay-200'>Hi, I'm Habiba - a Frontend Developer , Specialisizing in React , Next.js and typescript. I build scalable , performant web application that users love.</p>
             </div>
             {/* <Button size='lg'>Contact Me<ArrowBigLeft/> </Button> */}
-             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
+              <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
               <Button size="lg">
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
-              {/* <AnimatedBorderButton>
+              <AnimatedBorderButton>
                 <Download className="w-5 h-5" />
                 Download CV
-              </AnimatedBorderButton> */}
+              </AnimatedBorderButton>
             </div>
           </div>
           {/* right side */}

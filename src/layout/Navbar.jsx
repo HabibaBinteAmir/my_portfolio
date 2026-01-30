@@ -29,7 +29,7 @@ export const Navbar = () => {
            <Button size="sm">Contact me</Button>
         </div>
         {/* Mobile Menu button */}
-        <div className="md:hidden p-2 text-foreground" 
+        <div className="md:hidden p-2 text-foreground " 
         onClick={()=> setIsMobileMenuOpen((prev) => !prev)}>
             <button>
               { isMobileMenuOpen ? <X size={24}/>: <Menu size={24}/>}
@@ -39,7 +39,7 @@ export const Navbar = () => {
     </nav>
      {/* Mobile nav bar */}
        {isMobileMenuOpen &&(
-         <div className="animate-fade-in transition-all md:hidden glass_strong px-5 py-5  min-h-screen justify-center items-center">
+         <div className="animate-fade-in transition-all md:hidden glass_strong px-5 py-5  min-h-screen justify-center items-center bg-background ">
             <div className=" flex flex-col gap-y-10 items-center">
                {navlink.map((link,index)=>
                <a href={link.href} key={index} className="text-lg font-semibold " >{link.label}</a>
