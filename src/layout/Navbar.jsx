@@ -42,7 +42,9 @@ export const Navbar = () => {
          <div className="animate-fade-in transition-all md:hidden glass_strong px-5 py-5  min-h-screen justify-center items-center bg-background ">
             <div className=" flex flex-col gap-y-10 items-center">
                {navlink.map((link,index)=>
-               <a href={link.href} key={index} className="text-lg font-semibold " >{link.label}</a>
+               <a href={link.href} 
+               key={index} 
+               className="text-lg font-semibold  " >{link.label}</a>
 
             )}
              <Button size="default" className="w-[80%]">Contact me</Button>

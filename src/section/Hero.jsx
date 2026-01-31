@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from '../components/Button'
-import { ArrowBigLeft, ArrowRight, Download } from 'lucide-react'
+import { ArrowBigLeft, ArrowRight, Download, Facebook, Github, Instagram, Linkedin } from 'lucide-react'
 import { AnimatedBorderButton } from '../components/AnimatedButton'
 
 export const Hero = () => {
@@ -61,10 +61,28 @@ export const Hero = () => {
                 Download CV
               </AnimatedBorderButton>
             </div>
+            <div className=" flex gap-4 px-2 py-10 items-center">
+              <span>Follow :</span>
+              {[
+                {icon : Github ,link:"#"},
+                {icon : Linkedin ,link:"#"},
+                {icon : Facebook ,link:"#"},
+                {icon : Instagram ,link:"#"},
+               
+              ].map((social,idx)=>(
+                <a 
+                className='hover:text-primary delay-200 transition-all bg-primary/20 rounded-full p-2' 
+                key={idx}
+                href={social.link}
+                >{<social.icon/>}</a>
+              ))}
+            </div>
           </div>
           {/* right side */}
           <div className="">
-            <div className=""></div>
+            <div className="w-full ">
+              <img src="/public/profile-photo.jpg" alt=""  className='p-3 rounded-4xl p-3'/>
+            </div>
           </div>
         </div>
       </div>
