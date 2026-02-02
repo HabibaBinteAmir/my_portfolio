@@ -79,9 +79,11 @@ export const Hero = () => {
             </div>
           </div>
           {/* right side */}
-          <div className="">
-            <div className="w-full ">
-              <img src="/public/profile-photo.jpg" alt=""  className='p-3 rounded-4xl p-3'/>
+          <div className="  top-0 relative  animate-fade-in  delay-300">
+            <div className="relative  max-w-md mx-auto">
+              <div className="w-full ">
+              <img src="/public/profile.png" alt=""  className='w-full object-cover  rounded-3xl  aspect-[<4/5>] '/>
+            </div>
             </div>
           </div>
         </div>
