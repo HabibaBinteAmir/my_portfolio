@@ -32,7 +32,7 @@ export const Hero = () => {
       </div>
 {/* context section */}
       <div className=" container mx-auto px-6 pt-20 md:pt-28 pb-30 relative z-10 ">
-        <div className='grid lg:grid-cols-2 gap-12 items-center'>
+        <div className='grid lg:grid-cols-2 gap-12 '>
           {/* left side  */}
           <div >
             <div className="animate-fade-in">
